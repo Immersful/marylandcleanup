@@ -1,4 +1,5 @@
 var express     = require("express"),
+    app         = express(),
     bodyParser  = require("body-parser");
 
 
@@ -13,15 +14,15 @@ app.use(express.static("public"));
 //setting the view engine to ejs
 app.set("view engine", "ejs");
 
-app.get("/", function(res, req){
+app.get("/", function(req, res){
     res.render("index");
 });
 
-app.get("/contact", function(res, req){
-    res.render("contact");
+app.get("/contact", function(req, res){
+    res.render("contact")
 });
 
-app.post("/contact", function(res, req){
+app.post("/contact", function(req, res){
     
 });
 
