@@ -15,11 +15,11 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 app.get("/", function(req, res){
-    res.render("index");
+    res.render("index", {page_name: "index"});
 });
 
 app.get("/contact", function(req, res){
-    res.render("contact")
+    res.render("contact", {page_name: "contact"})
 });
 
 app.post("/contact", function(req, res){

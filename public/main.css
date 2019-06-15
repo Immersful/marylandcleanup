@@ -1,0 +1,53 @@
+*, html, body {
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    border-bottom: 2px solid black;
+}
+
+.carousel-item {
+    height: 40rem;
+}
+
+.arrow {
+    font-size: 44px;
+    color: white;
+    height: 23rem;
+    z-index: 1;
+}
+
+#imageSlider {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#sectionImage {
+    height: 30rem;
+    width: 100%;
+    position: fixed;
+}
+
+#navbarSectionOne {
+    padding-right: 2rem;
+}
+
+#navbarSectionOne li{
+    padding-right: 2rem;
+}
+
+#marylandColor {
+    background: linear-gradient(to right, black 25%, red 100%);
+    background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#mdMap {
+    border: 1px solid black;
+}
+
+#ourgoalP {
+    font-weight: 600;
+}

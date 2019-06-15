@@ -16,47 +16,46 @@
     </head>
     <body>
 
-            <header class="container-fluid">
+            <header id="header" class="container-fluid">
                     <nav id="navbar" class="navbar navbar-expand-xl position-fixed-top  navbar-light">
-                            <a class="navbar-brand navColor mx-auto" href="/" aria-label="Navbar">Guys<span class="text-primary">Law</span><span class="text-dark">Firm</span></a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse p-0 m-0" id="navbarNav">
-                                <div class="container p-0 m-0 col-12 col-xl-10">
-                                    <ul id="headerUlOne" class="text-center nav nav-pills  navbar-nav">
-                                        <li class="nav-item mx-auto <% if(page_name === "index") { %> active <% } %>">
-                                            <a class="nav-link text-md-center" href="/" aria-label="Home">Home <span class="sr-only">Home</span></a>
-                                        </li>
-                                        <li class="nav-item mx-auto <% if(page_name === "about") { %> active <% } %>">
-                                            <a class="nav-link" href="/about" aria-label="/about">About</a>
-                                        </li>
-                                        <li class="nav-item mx-auto <% if(page_name === "contact") { %> active <% } %>">
-                                            <a class="nav-link" href="/contact" aria-label="/contact">Contact</a>
-                                        </li>
-                                    </ul>
+                                <div class="p-0 m-0 col-12 col-xl-5">
+                                    <div class="justify-content-end d-flex">
+                                            <ul id="navbarSectionOne" class="text-center nav nav-pills  navbar-nav">
+                                                    <li class="nav-item ml-5 <% if(page_name === "index") { %> active <% } %>">
+                                                        <a class="nav-link text-md-center" href="/" aria-label="Home">Home <span class="sr-only">Home</span></a>
+                                                    </li>
+                                                    <li class="nav-item ml-5 <% if(page_name === "contact") { %> active <% } %>">
+                                                        <a class="nav-link" href="/contact" aria-label="/contact">Contact</a>
+                                                    </li>
+                                                </ul>
+                                    </div>
                                 </div>
-                                <div class="justify-content-center justify-xl-content-end d-flex">
-                                    <ul id="headerUltwo" class="text-center nav nav-pills text-light navbar-nav">
-                                        <!-- If no current user display... -->
-                                        <% if (!currentUser) { %>
-                                            <li class="nav-item mx-auto text-center <% if(page_name === "logIn") { %> active <% } %>">
-                                                <a class="nav-link" href="/login" aria-label="/login">Log In</a>
-                                            </li>
-                                            <li class="nav-item mx-auto text-center <% if(page_name === "signUp") { %> active <% } %>">
-                                                 <a class="nav-link pl-xl-4" href="/signup" aria-label="Signup">Sign Up</a>
-                                            </li>
-                                            <!-- If user display... -->
-                                        <% } else { %>
-                                            <li class="nav-item mx-auto <% if(page_name === "profile") { %> active <% }; %>">
-                                                <!--href is making it so it goes to the correct url-->
-                                                <a class="nav-link" href="/profile/<%=currentUser.id%>" aria-label="Profile">Welcome, <%= currentUser.username %></a>
-                                            </li>
-                                            <li class="nav-item mx-auto text-center">
-                                                <a class="nav-link" href="/logout" aria-label="logout">Logout</a>
-                                            </li>
-                                        <%  } %>
-                                    </ul>
+
+                                <div class="col-2">
+                                    <div class="justify-content-center d-flex mx-auto">
+                                        <a id="marylandColor" class="navbar-brand m-0 p-0" href="/" aria-label="Navbar">MarylandCleanUp</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="justify-content-around">
+                                            <ul id="headerUltwo" class="text-center nav nav-pills text-light navbar-nav">
+                                                    <!-- If no current user display... -->
+                                                        <li class="nav-item mx-auto text-center <% if(page_name === "logIn") { %> active <% } %>">
+                                                            <a class="nav-link" href="/login" aria-label="About">About</a>
+                                                        </li>
+                                                        <li class="nav-item mx-auto <% if(page_name === "profile") { %> active <% }; %>">
+                                                            <a class="nav-link" href="" aria-label="Our Goal">Our Goal</a>
+                                                        </li>
+                                                        <li class="nav-item mx-auto text-center">
+                                                            <a class="nav-link" href="" aria-label="Donation">Donation</a>
+                                                        </li>
+                                                </ul>
+                                    </div>
                                 </div>
                             </div>
                     </nav>
