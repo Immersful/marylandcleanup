@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 header{
     border-bottom: 2px solid black;
 }
@@ -27,14 +31,6 @@ header{
     height: 30rem;
     width: 100%;
     position: fixed;
-}
-
-#navbarSectionOne {
-    padding-right: 2rem;
-}
-
-#navbarSectionOne li{
-    padding-right: 2rem;
 }
 
 #marylandColor {
