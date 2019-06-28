@@ -16,52 +16,58 @@
     </head>
     <body>
 
-            <header id="header" class="container-fluid">
-                    <nav id="navbar" class="navbar navbar-expand-xl position-fixed-top  navbar-light">
-                            <div class="col-2 mx-auto mx-xl-0 d-block d-xl-none">
-                                    <div class="justify-content-xl-center d-flex">
-                                        <a id="marylandColor" class="navbar-brand m-0 p-0 mx-auto" href="/" aria-label="Navbar">MarylandCleanUp</a>
+                    <nav id="navbar" class="navbar navbar-expand-xl navbar-light fixed-top bg-light">
+                        <div class="container-fluid">
+                            <!-- Navbar brand for xs - xl -->
+                            <div class="col-2 mx-xl-0 d-block d-xl-none">
+                                    <div class="">
+                                        <a id="marylandColor" class="navbar-brand m-0 p-0 ml-3 float-left" href="/" aria-label="Navbar">MarylandCleanUp</a>
                                     </div>
                                 </div>
+
+                            <!-- Navbar Toggler -->
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                             </button>
+                            <!-- what is being toggled -->
                             <div class="collapse navbar-collapse p-0 m-0" id="navbarNav">
-                                <div class="p-0 m-0 col-12 col-xl-5 mx-auto mx-xl-0">
-                                    <div class="justify-content-xl-end d-flex mx-auto">
-                                            <ul id="navbarSectionOne" class="text-center nav nav-pills mx-auto navbar-nav">
-                                                    <li class="nav-item text-center <% if(page_name === "index") { %> active <% } %>">
-                                                        <a class="nav-link ml-5" href="/" aria-label="Home">Home <span class="sr-only">Home</span></a>
+                                <!-- Navbar first links -->
+                                <div class="p-0 m-0 col-xl-5">
+                                    <div class="justify-content-center justify-content-xl-end d-flex">
+                                            <ul id="navbarSectionOne" class="text-center nav nav-pills navbar-nav">
+                                                    <li class="nav-item text-center active">
+                                                        <a class="nav-link ml-0 ml-xl-5" href="#home" aria-label="Home">Home <span class="sr-only">Home</span></a>
                                                     </li>
-                                                    <li class="nav-item text-center <% if(page_name === "contact") { %> active <% } %>">
-                                                        <a class="nav-link ml-5" href="/contact" aria-label="/contact">Contact</a>
+                                                    <li class="nav-item text-center">
+                                                        <a class="nav-link ml-0 ml-xl-5" href="#contact" aria-label="/contact">Contact</a>
                                                     </li>
                                                 </ul>
                                     </div>
                                 </div>
 
+                                <!-- Navbar brand for xl+ -->
                                 <div class="col-2 mx-auto mx-xl-0 d-none d-xl-block">
                                     <div class="justify-content-xl-center d-flex">
                                         <a id="marylandColor" class="navbar-brand m-0 p-0 mx-auto" href="/" aria-label="Navbar">MarylandCleanUp</a>
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-xl-5 mx-auto mx-xl-0">
-                                    <div class="justify-content-xl-start">
-                                            <ul id="headerUltwo" class="nav nav-pills text-light mx-auto navbar-nav">
-                                                    <!-- If no current user display... -->
-                                                        <li class="nav-item mx-auto text-center">
-                                                            <a class="nav-link mr-5" href="/login" aria-label="About">About</a>
+                                <!-- Navbar seconds links -->
+                                <div class="p-0 m-0 col-xl-5 mx-auto mx-xl-0">
+                                    <div class="justify-content-center justify-content-xl-start d-flex">
+                                            <ul id="headerUltwo" class="text-center nav nav-pills text-light navbar-nav">
+                                                        <li class="nav-item text-center">
+                                                            <a class="nav-link mr-0 mr-xl-5" href="#about" aria-label="About">About</a>
                                                         </li>
-                                                        <li class="nav-item mx-auto">
-                                                            <a class="nav-link mr-5" href="" aria-label="Our Goal">Our Goal</a>
+                                                        <li class="nav-item text-center">
+                                                            <a class="nav-link mr-0 mr-xl-5" href="#ourGoal" aria-label="Our Goal">Our Goal</a>
                                                         </li>
-                                                        <li class="nav-item mx-auto text-center">
-                                                            <button class="btn btn-primary mr-5" href="" aria-label="Donation">Donation</button>
+                                                        <li class="nav-item text-center">
+                                                            <button class="btn btn-primary mr-0 mr-xl-5" href="" aria-label="Donation">Donation</button>
                                                         </li>
                                                 </ul>
                                     </div>
                                 </div>
                             </div>
+                        </div>
                     </nav>
-            </header>   

@@ -14,19 +14,19 @@ app.use(express.static("public"));
 //setting the view engine to ejs
 app.set("view engine", "ejs");
 
+// Routes
+
+// index route
 app.get("/", function(req, res){
-    res.render("index", {page_name: "index"});
+    res.render("index");
 });
 
-app.get("/contact", function(req, res){
-    res.render("contact", {page_name: "contact"})
-});
-
+// post request for contact form
 app.post("/contact", function(req, res){
     
 });
 
-
+// serving the application to local host 3000
 app.listen(3000, function(){
     console.log("Server Started");
 });
