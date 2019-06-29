@@ -66,9 +66,9 @@ hr.style-one {
 }
 
 #aboutBack {
-    background-image: linear-gradient(176deg, #22313F 69%, #FFFFFF calc(70% + 2px));
+    background-image: linear-gradient(176deg, #343A40 69%, #FFFFFF calc(70% + 2px));
 }
 
 #ourgoalBack {
-    background-image: linear-gradient(to bottom, #FFFFFF ,  #22313F);
+    background-image: linear-gradient(to bottom, #FFFFFF ,  #343A40);
 }
