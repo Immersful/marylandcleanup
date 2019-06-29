@@ -64,3 +64,11 @@ hr.style-one {
 .quoteH {
     opacity: 1;
 }
+
+#aboutBack {
+    background-image: linear-gradient(176deg, #22313F 69%, #FFFFFF calc(70% + 2px));
+}
+
+#ourgoalBack {
+    background-image: linear-gradient(to bottom, #FFFFFF ,  #22313F);
+}
